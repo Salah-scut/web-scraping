@@ -3,9 +3,15 @@ Exploring the Internet using web scraping in python.
 
 
 
-B站
 
-<iframe src="//player.bilibili.com/player.html?aid=201359909&bvid=BV1Yh411o7Sz&cid=210511039&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-python爬虫的学习记录，一起加油捏！
+B站视频地址：
+
+
+
+https://www.bilibili.com/video/BV1Yh411o7Sz?share_source=copy_web
+
+
+
+随便写写，python爬虫的学习记录，一起加油捏！
 

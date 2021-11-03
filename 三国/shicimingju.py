@@ -1,10 +1,6 @@
-import struct
-
 from bs4 import BeautifulSoup
 import lxml
 import requests
-import pandas as pd
-import os
 
 # appointing url and U-A
 url = 'https://www.shicimingju.com/book/sanguoyanyi.html'
@@ -27,7 +23,6 @@ href_list = ['https://www.shicimingju.com/' + x['href']
 print(len(title_list), ' titles')
 print(len(href_list), ' href')
 
-print(title_list[1], href_list[1])
 
 content_list = []
 for href in href_list:
