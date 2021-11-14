@@ -41,8 +41,8 @@ data_dict = []
 # 截至2021/11/14，北京知识产权共有10962条数据
 # 每一页都返回21条微博
 
-for i in range(1,5):
-# for i in range(1,int(10962/21)):
+# for i in range(1,5):
+for i in range(1,int(10962/21)):
     params['page'] = i
     print('尝试获取第{}页信息'.format(i))
     try:
@@ -53,10 +53,10 @@ for i in range(1,5):
         print('第{}页获取数据失败'.format(i))
     else:
         for item in content_list:
-            time = item['created_at']
+            created_time = item['created_at']
             source = item['source']
             text_raw = item['text_raw']
-            data_dict.append([text_raw,time,source])
+            data_dict.append([text_raw,created_time,source])
         time.sleep(5)
 
 dataframe = pd.DataFrame(data=data_dict,columns=['text','time','source'])
