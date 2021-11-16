@@ -1,13 +1,7 @@
 import requests
-from bs4 import BeautifulSoup
 import pandas as pd
 import os
 import time
-from urllib.parse import urlencode
-import re
-from selenium import webdriver
-import json
-from datetime import datetime
 
 url = 'https://weibo.com/ajax/statuses/mymblog'
 
